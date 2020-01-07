@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  background-color: #3c3c3c;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container{
+  height: 300px;
+  width:  300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -180px 0 0 -180px;
+  animation: sizes 50s infinite;
+}
+
+.square{
+  height: 94%;
+  width: 94%;
+  border-radius: 38.5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -47% 0 0 -47%;
+  animation: change 40s infinite alternate; 
+}
+
+.black{ 
+  background: rgba(255,255,255,0.38); 
+  animation: rotate 12s infinite linear; 
+  box-shadow: 12px 12px 50px rgba(210,210,250,0.3);
+}
+
+@keyframes sizes{
+  0%{
+    top: 50%;
+    left: 50%;}
+
+  10%{
+    top: 20%;
+    left: 20%;}
+
+  23%{
+    height: 90px;
+    width: 90px;
+    top: 75%;
+    left: 38%;}
+
+  32%{
+    height: 150px;
+    width: 150px;
+    top: 50%;
+    left: 17%;}
+
+  44.7%{
+    height: 330px;
+    width: 330px;
+    top: 40%;
+    left: 30.45%;}
+
+  50.7%{
+    height: 130px;
+    width: 130px;
+    top: 87.70%;
+    left: 88.85%;}
+
+  64.3%{
+    top: 63.5%;
+    left: 60.3%;}
+
+  78.42%{
+    height: 200px;
+    width:  200px;
+    top: 56.7%;
+    left: 43.2%;}
+
+  91.22%{
+    height: 150px;
+    width: 150px;
+    top: 81.31%;
+    left: 84.63%;}
+
+  100%{
+    height: 320px;
+    width: 320px;
+    top: 50%;
+    left: 50%;}
+}
+
+@keyframes change{
+  0%{background: red; transform: scale(0.985);}
+  15%{background: magenta; transform: scale(0.985);}
+  25%{background: purple; transform: scale(0.985);}
+  35%{background: violet; transform: scale(0.985);}
+  45%{background: blue; transform: scale(0.985);}
+  55%{background: #00e6e6; transform: scale(0.985);}
+  65%{background: green; transform: scale(0.985);}
+  75%{background: chartreuse; transform: scale(0.985);}
+  85%{background: #cccc00; transform: scale(0.985);}
+  95%{background: orange; transform: scale(0.985);}
+  100%{background: red; transform: scale(0.985);}
+}
+
+@keyframes rotate{
+  0%{ transform: rotateZ(0deg);}
+  100%{ transform: rotateZ(360deg);}  
+}
+
+footer h4{
+  position: absolute;
+  top: 92%;
+  right: 4%;
+  color: white;
+  font-family: 'Monda', sans-serif;
+}
